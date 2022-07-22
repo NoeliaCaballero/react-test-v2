@@ -1,7 +1,12 @@
 .App {
   height: 100%;
+  display: flex; 
+  font-family: "Pokemon GB"; 
 
   .PokemonList {
     width: 30%;
+  }
+  .PokemonViewer{ 
+    width: 70%;
   }
 }

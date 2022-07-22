@@ -1,8 +1,10 @@
 .PokemonList {
+ 
   .list-container,
   .list {
-    display: flex;
-    flex-direction: column;
+    display: flex; 
+    flex-direction: column; 
+   
   }
 
   .list {
@@ -15,6 +17,7 @@
 
   .input-container {
     margin-bottom: 1rem;
+    
 
     input {
       font-size: 0.8rem;
@@ -22,6 +25,7 @@
       padding: 1rem 2rem;
       text-transform: none;
       width: 100%;
+      font-family: 'Pokemon GB'; 
     }
   }
 
@@ -31,6 +35,12 @@
     font-size: 1rem;
     padding: 0.8rem 2rem;
     position: relative;
+    font-family: 'Pokemon GB'; 
+    text-decoration: none; 
+    border: none; 
+    text-align: start; 
+    color: black;
+    
 
     &.selected::after {
       visibility: visible;
@@ -62,4 +72,17 @@
     line-height: 2;
     text-align: center;
   }
+
+  .name-button{
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.empty-pokemon-view {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  
 }
