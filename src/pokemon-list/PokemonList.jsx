@@ -16,7 +16,7 @@ function PokemonList() {
   const [search, setSearch] = useState("");
 
   const [isShown, setIsShown] = useState("");
-  const [firstView, setFirstView] = useState(false);
+  // const [firstView, setFirstView] = useState(false);
 
   const [pokemons, allPokemons, setPokemons] = useGetFirstGen(
     "https://pokeapi.co/api/v2/generation/1/"
@@ -64,7 +64,7 @@ function PokemonList() {
                         key={pokemon.name}
                         onClick={() => {
                           setIsShown(index);
-                          setFirstView(true);
+                          // setFirstView(true);
                         }}
                         className={
                           isShown === index
@@ -88,11 +88,11 @@ function PokemonList() {
         </div>
       </div>
 
-      {firstView !== true ? (
+      {/* {firstView !== true ? (
         <div className="empty-pokemon-view">NO POKEMON SELECTED</div>
       ) : (
         ""
-      )}
+      )} */}
     </>
   );
 }
